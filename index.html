@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Student Information</h1>
+    <div class="Container">
+      <form name="registerForm">
+        <label for="lastName">Full Name *</label>
+        <input type="text" id="lastName" placeholder="Mr Alex" required />
+        <label for="Genger">Genger</label>
+        <select id="Genger" type="Genger">
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+        <label for="country">University</label>
+        <select id="University" placeholder="University">
+          <option>Pundra University Of Science</option>
+          & technology
+          <option>North South University</option>
+          <option>Independent University, Bangladesh</option>
+          <option>East West University</option>
+          <option>University of Asia Pacific</option>
+        </select>
+        <label for="email">E-mail address *</label>
+        <input
+          type="email"
+          id="e-mail"
+          placeholder="alexRoline@net.com"
+          required
+        />
+        <label for="phoneNumber">Phone Number</label>
+        <input
+          type="text"
+          id="phoneNumber"
+          maxlength="9"
+          pattern=".{9,}"
+          required
+          title="9 characters length"
+          placeholder="+8801523587972"
+        />
+        <label for="country">Department</label>
+        <select id="Department" name="Department">
+          <option>CSE</option>
+          <option>EEE</option>
+          <option>BBA</option>
+        </select>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
