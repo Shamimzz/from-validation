@@ -14,13 +14,43 @@
       <form name="registerForm">
         <label for="lastName">Full Name *</label>
         <input type="text" id="lastName" placeholder="Mr Alex" required />
-        <label for="Genger">Genger</label>
-        <select id="Genger" type="Genger">
-          <option>Male</option>
-          <option>Female</option>
+        <label for="country" id="department">Gender</label>
+        <select name="gender">
+          <option value="none" selected>Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">other</option>
         </select>
-        <label for="country">University</label>
+
+        <label id="date" for="start">Date Of Birth</label>
+        <input type="date" />
+
+        <label for="country" id="department">Department & Batch</label>
+        <select name="Department">
+          <option value="none" selected>Department</option>
+          <option>CSE</option>
+          <option>EEE</option>
+          <option>BBA</option>
+        </select>
+        <select name="Batch">
+          <option value="none" selected>Batch</option>
+          <option value="1st">1st</option>
+          <option value="2nd">2nd</option>
+          <option value="3rd">3rd</option>
+          <option value="4rd">4rd</option>
+          <option value="5rd">5rd</option>
+          <option value="6rd">6rd</option>
+          <option value="7rd">7rd</option>
+          <option value="8rd">8rd</option>
+          <option value="9rd">9rd</option>
+          <option value="10rd">10rd</option>
+          <option value="11rd">11rd</option>
+          <option value="12rd">12rd</option>
+          <option value="13rd">13rd</option>
+        </select>
+        <label for="country" id="university">University Name</label>
         <select id="University" placeholder="University">
+          <option value="none" selected>University</option>
           <option>Pundra University Of Science</option>
           & technology
           <option>North South University</option>
@@ -39,18 +69,12 @@
         <input
           type="text"
           id="phoneNumber"
-          maxlength="9"
+          maxlength="11"
           pattern=".{9,}"
           required
           title="9 characters length"
           placeholder="+8801523587972"
         />
-        <label for="country">Department</label>
-        <select id="Department" name="Department">
-          <option>CSE</option>
-          <option>EEE</option>
-          <option>BBA</option>
-        </select>
         <button id="submit" type="submit">Submit</button>
       </form>
     </div>

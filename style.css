@@ -18,7 +18,7 @@ h1 {
   margin: auto;
   text-align: left;
   /* background: #081229; */
-  width: 60%;
+  width: 40%;
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -28,6 +28,21 @@ h1 {
 label {
   color: #66cc99;
   text-transform: uppercase;
+}
+
+input[type="date" i] {
+  color-scheme: dark;
+}
+
+.input[type="date"] {
+  color-scheme: dark;
+}
+
+#date,
+#department,
+#university {
+  display: block;
+  margin-top: 20px;
 }
 
 #Genger,
@@ -65,7 +80,7 @@ input {
   background: transparent;
   font-size: 14px;
   display: block;
-  padding: 10px 30px 10px 5px;
+  padding: 10px 0px 10px 5px;
   margin: 10px 0 30px;
   border: none;
   border-bottom: 1px solid rgba(128, 128, 128, 0.5);
@@ -97,4 +112,36 @@ input:focus {
 
 .button:hover {
   background: #5ec190;
+}
+
+@media only screen and (max-width: 668px) {
+  .Container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 284px) {
+  h1 {
+    font-size: 15px !important;
+  }
+  .Container {
+    width: 90%;
+    border: none;
+  }
+  input {
+    width: 80%;
+    font-size: 14px;
+    padding: 5px 0px 5px 2px;
+    margin: 10px 0 20px;
+  }
+  #Genger,
+  #University {
+    padding: 10px 150px 10px 5px;
+    width: 80%;
+    margin: 10px 0 30px;
+  }
+
+  #Department {
+    width: 80%;
+    padding: 10px 200px 10px 5px;
+  }
 }
