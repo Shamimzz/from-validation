@@ -114,6 +114,10 @@ input:focus {
   background: #5ec190;
 }
 
+.pass-alart {
+  display: grid;
+}
+
 @media only screen and (max-width: 668px) {
   .Container {
     width: 80%;
